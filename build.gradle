@@ -18,7 +18,29 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
+    mavenLocal()
+
+    flatDir {
+        dir 'libs'
+    }
+
+
+    maven { url = "https://maven.enginehub.org/repo/" }
+    maven {
+        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+
+
+
+
+    maven { url = "https://maven.firstdarkdev.xyz/snapshots" } // LDLib2, Photon2
+    maven { url = "https://maven.theillusivec4.top" }
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://maven.blamejared.com" }
+    maven { url = "https://maven.kosmx.dev/" }
 }
 
 base {
@@ -112,27 +134,30 @@ configurations {
 }
 
 dependencies {
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
 
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
+    //JEI
+    implementation "curse.maven:jei-238222:6829086"
 
-    // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
+    //CURIOS
+    implementation "curse.maven:curios-309927:6529130"
 
-    // Example project dependency using a sister or child project:
-    // implementation project(":myproject")
+    //APOTHIC ATTRIBUTES
+    implementation "curse.maven:apothic-attributes-898963:6514649"
 
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    //SELENE
+    implementation "curse.maven:selene-499980:6224057"
+
+    //TITAN
+    implementation "curse.maven:prometheus-1365195:7364871"
+
+    // GECKOLIB
+    implementation "curse.maven:geckolib-388172:6304958"
+
+    //Cobweb
+    implementation "curse.maven:cobweb-968456:7186943"
+
+    //PLACEBO
+    implementation "curse.maven:placebo-283644:6446766"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

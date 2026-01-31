@@ -1,0 +1,13 @@
+{
+  "itemGroup.arcanearchaeology": "Example Mod Tab",
+  "block.arcanearchaeology.example_block": "Example Block",
+  "item.arcanearchaeology.example_item": "Example Item",
+
+  "arcanearchaeology.configuration.title": "Arcane Archaeology Configs",
+  "arcanearchaeology.configuration.section.arcanearchaeology.common.toml": "Arcane Archaeology Configs",
+  "arcanearchaeology.configuration.section.arcanearchaeology.common.toml.title": "Arcane Archaeology Configs",
+  "arcanearchaeology.configuration.items": "Item List",
+  "arcanearchaeology.configuration.logDirtBlock": "Log Dirt Block",
+  "arcanearchaeology.configuration.magicNumberIntroduction": "Magic Number Text",
+  "arcanearchaeology.configuration.magicNumber": "Magic Number"
+}

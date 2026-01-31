@@ -38,7 +38,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 @Mod(ArcaneArchaeology.MODID)
 public class ArcaneArchaeology {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "arcanearchaeology";
+    public static final String MODID = "arcane_archaeology";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 

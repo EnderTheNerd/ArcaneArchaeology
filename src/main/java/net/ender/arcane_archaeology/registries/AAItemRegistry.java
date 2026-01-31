@@ -16,7 +16,7 @@ public class AAItemRegistry {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ArcaneArchaeology.MODID);
 
 
-public static final DeferredItem<SwordItem> PRETEND_WAND = ITEMS.register("pretend_wand",
+public static final DeferredItem<SwordItem> PRETEND_WAND = ITEMS.register("wooden_wand",
         () -> new SwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 1, -1.2F))));
 
 

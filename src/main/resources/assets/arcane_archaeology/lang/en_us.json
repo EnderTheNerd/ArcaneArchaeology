@@ -1,5 +1,10 @@
 {
   "creative_tab.arcane_archeology_items": "Arcane Archeology Items",
 
-  "item.arcane_archaeology.wooden_wand": "Pretend Wand"
+  "item.arcane_archaeology.wooden_wand": "Pretend Wand",
+  "item.arcane_archaeology.pretend_wand_ui": "A fake wand carved from wood. You didn't do a very good job.",
+
+  "key.category.arcane_archaeology": "Arcane Archaeology",
+  "key.arcane_archaeology.cast": "Use Wand Secondary Ability"
+
 }
